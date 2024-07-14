@@ -97,12 +97,35 @@ main{
     font-size: 45px;
     color: rgba(255, 144, 14, 1);
 }
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.fact-card{
+        border: 1px solid #FF900E;
+        width: 240px;
+        height: 240px;
+        border-radius: 8px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+.fact-namber{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
  @media screen and (max-width: 516px) {
     .navbar, .nav-link, .teams{
         flex-direction: column;
     }
     .teams-img{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns:
     }
     .our-features{
         margin-left: 20px;
