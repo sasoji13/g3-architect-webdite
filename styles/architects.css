@@ -19,7 +19,13 @@
     color: #424242;
 }
 .text-light-gray{
+    text-align: center;
     color: #727272;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 58px auto;
+    max-width: 542px;
+    
 }
 .navbar{
 justify-content: space-between;
@@ -102,6 +108,10 @@ main{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.fact-name{
+    width: 169px;
+    height: 23px;
+}
 
 .fact-card{
         border: 1px solid #FF900E;
@@ -111,14 +121,33 @@ main{
         align-items: center;
         text-align: center;
         justify-content: center;
+        margin-top: 10px;
     }
 .fact-namber{
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
+
+.sponsor-info{
+    max-width: 542px;
+    margin: 58px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.sponsor-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img{
+    filter: grayscale(100%);
+}
+
+    
+
 
  @media screen and (max-width: 516px) {
     .navbar, .nav-link, .teams{
@@ -135,6 +164,7 @@ main{
  @media screen and (min-width: 576px) and (max-width: 992px){
     .teams{
         flex-direction: column;
+     }
     }
     .our-features{
         margin: 50px auto;
